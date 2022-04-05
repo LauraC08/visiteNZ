@@ -10,7 +10,7 @@ import './styles/app.scss';
 
 // start the Stimulus application
 import './bootstrap';
-require('bootstrap');
+require('bootstrap') ;
 console.log('ok');
 let myCarousel = document.querySelector('#carousel');
 let carousel = new bootstrap.Carousel(myCarousel);
