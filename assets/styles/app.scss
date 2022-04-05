@@ -1,9 +1,13 @@
 @import "~bootstrap/scss/bootstrap";
-$color: pink;
+
+$white : #F5F5F5F5;
+$black : #0B0B0B;
+$blue : #003C97;
+$green : #00700B;
+$merienda : 'Merienda', cursive;
+$roboto : 'Roboto Condensed', sans-serif;
+
 
 body {
-    background-color: $color;
+    background: $white;
 }
- img {
-     width: 200px;
- }
