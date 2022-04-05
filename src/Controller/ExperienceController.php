@@ -11,7 +11,7 @@ class ExperienceController extends AbstractController
     #[Route('/experience', name: 'app_experience')]
     public function index(): Response
     {
-        return $this->render('experience/index.html.twig', [
+        return $this->render('experience/list.html.twig', [
             'controller_name' => 'ExperienceController',
         ]);
     }
