@@ -7,7 +7,29 @@ $green : #00700B;
 $merienda : 'Merienda', cursive;
 $roboto : 'Roboto Condensed', sans-serif;
 
-
+html{
+    width: 100%;
+}
 body {
     background: $white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header{
+    background: $black;
+    color:$white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .site-id{
+        display: flex;
+        align-items: center;
+        img{
+            width: 10rem;
+        }
+        h1{
+            font-family: $merienda;
+            font-size: 5rem;
+            margin: auto;
+        }
+    }
 }

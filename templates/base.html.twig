@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,18 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
-    <body>
+    <body class="container-fluid p-0 m-0">
+    <header class="container-fluid p-3">
+        <div class="site-id">
+            <a href="{{ path('app_main') }}"><img src="../assets/images/NZLogo.png" alt="Logo"></a>
+            <h1>Visit Nz</h1>
+        </div>
+        <nav>
+            <a href="">HOME</a>
+            <a href="">OUR EXPERIENCES</a>
+            <a href="">CONTACTS</a>
+        </nav>
+    </header>
         {% block body %}{% endblock %}
     </body>
 </html>
