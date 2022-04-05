@@ -15,21 +15,23 @@ body {
     background: $white;
     font-family: 'Roboto Condensed', sans-serif;
 }
+//HEADER//
 header{
     background: $black;
     color:$white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    //LOGO AND
     .site-id{
         display: flex;
         align-items: center;
         img{
-            width: 10rem;
+            width: 8rem;
         }
         h1{
             font-family: $merienda;
-            font-size: 5rem;
+            font-size: 4rem;
             margin: auto;
         }
     }
@@ -43,8 +45,18 @@ header{
         }
         a:hover, a:focus, a:active{
             border-bottom: 0.2rem solid $green;
+            transition: all 1s ease;
         }
     }
+}
+.button{
+    background: $blue !important;
+    color:$white !important;
+}
+.button:hover, .button:focus, .button:active{
+    background: $white  !important;
+    color: $blue !important;
+    transition: all .8s ease;
 }
 footer{
     background: $black;
