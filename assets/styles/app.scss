@@ -1,9 +1,35 @@
 @import "~bootstrap/scss/bootstrap";
-$color: pink;
 
-body {
-    background-color: $color;
+$white : #F5F5F5F5;
+$black : #0B0B0B;
+$blue : #003C97;
+$green : #00700B;
+$merienda : 'Merienda', cursive;
+$roboto : 'Roboto Condensed', sans-serif;
+
+html{
+    width: 100%;
 }
- img {
-     width: 200px;
- }
+body {
+    background: $white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header{
+    background: $black;
+    color:$white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .site-id{
+        display: flex;
+        align-items: center;
+        img{
+            width: 10rem;
+        }
+        h1{
+            font-family: $merienda;
+            font-size: 5rem;
+            margin: auto;
+        }
+    }
+}
