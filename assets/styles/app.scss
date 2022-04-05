@@ -2,6 +2,7 @@
 
 $white : #F5F5F5F5;
 $black : #0B0B0B;
+$transparentblack :rgba(11, 11, 11, 0.60);
 $blue : #003C97;
 $green : #00700B;
 $merienda : 'Merienda', cursive;
@@ -32,4 +33,23 @@ header{
             margin: auto;
         }
     }
+    nav{
+        display: flex;
+        flex-direction: row;
+        a{
+            color:$white !important;
+            font-size: 1.8rem;
+            border-bottom: 0.2rem solid transparent;
+        }
+        a:hover, a:focus, a:active{
+            border-bottom: 0.2rem solid $green;
+        }
+    }
 }
+footer{
+    background: $black;
+    color: $white;
+    width: 100%;
+}
+
+@import "./Home";
