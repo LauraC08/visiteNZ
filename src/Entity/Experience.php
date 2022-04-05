@@ -27,6 +27,9 @@ class Experience
     #[ORM\OneToMany(mappedBy: 'experience', targetEntity: User::class)]
     private $users;
 
+    #[ORM\Column(type: 'string', length: 255, nullable: true)]
+    private $img_url;
+
     public function __construct()
     {
         $this->users = new ArrayCollection();
@@ -99,6 +102,18 @@ class Experience
                 $user->setExperience(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getImgUrl(): ?string
+    {
+        return $this->img_url;
+    }
+
+    public function setImgUrl(?string $img_url): self
+    {
+        $this->img_url = $img_url;
 
         return $this;
     }
