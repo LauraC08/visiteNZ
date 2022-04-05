@@ -12,3 +12,6 @@ import './styles/app.scss';
 import './bootstrap';
 require('bootstrap');
 console.log('ok');
+let myCarousel = document.querySelector('#carousel');
+let carousel = new bootstrap.Carousel(myCarousel);
+
