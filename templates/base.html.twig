@@ -27,9 +27,9 @@
             <h1>Visit Nz</h1>
         </div>
         <nav>
-            <a href="#" class="nav-link">HOME</a>
-            <a href="#" class="nav-link">OUR EXPERIENCES</a>
-            <a href="#" class="nav-link">CONTACTS</a>
+            <a href="{{ path('app_main') }}" class="nav-link">HOME</a>
+            <a href="{{ path('app_experience') }}" class="nav-link">OUR EXPERIENCES</a>
+            <a href="{{ path('app_contact') }}" class="nav-link">CONTACTS</a>
         </nav>
     </header>
         {% block body %}{% endblock %}

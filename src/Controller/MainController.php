@@ -19,4 +19,9 @@ class MainController extends AbstractController
         return $this->render('main/index.html.twig',
         ['translated'=> $translated]);
     }
+    #[Route('/contact', name: 'app_contact')]
+    public function contact(): Response
+    {
+        return $this->render('main/contact.html.twig');
+    }
 }

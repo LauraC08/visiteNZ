@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent () }} | Our Experiences{% endblock %}
+
+{% block body %}
+<div class="experiences">
+    <h1>Experiences page</h1>
+    {% for experience in experiences %}
+        <div class="card">
+            <img src="{{ experience.imgUrl }}" alt="{{ experience.title }}">
+            <h3>{{ experience.title }}</h3>
+            <p>{{ experience.price }}€/day</p>
+            <a href="{{ path('app_experience_delete', {'id' : experience.id }) }}" class="button">Delete</a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
