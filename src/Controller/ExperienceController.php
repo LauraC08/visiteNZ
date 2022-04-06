@@ -31,8 +31,8 @@ class ExperienceController extends AbstractController
         return $this->render('experience/details.html.twig', ['experience'=>$experience]);
     }
 
-    #[Route('/add', name: 'app_experience_add')]
-    public function add(Request $request, ExperienceRepository $exRep, EntityManagerInterface $em): Response
+    #[Route('/add', name: 'app_experience_add', methods: ['GET', 'POST'])]
+    public function add(Request $request, EntityManagerInterface $em): Response
     {
         $experience= new Experience();
         $form= $this->createForm(ExperienceType::class, $experience);
@@ -60,7 +60,7 @@ class ExperienceController extends AbstractController
     }
 
 
-    #[Route('/{id}', name: 'app_experience_delete', methods: ['POST'])]
+    #[Route('/{id}/delete', name: 'app_experience_delete', methods: ['POST'])]
     public function delete(Experience $experience, ExperienceRepository $exRep): Response
     {
         //PENSER à RAJOUTER SEASURF

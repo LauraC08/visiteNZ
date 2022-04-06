@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent () }} | Add Experience{% endblock %}
+
+{% block body %}
+    <h2>Add Experience</h2>
+    {{ include('experience/_form.html.twig', {'button_label': 'Add' }) }}
+    <a href="{{ path('app_experience') }}" class="button btn">Back to list</a>
+{% endblock %}

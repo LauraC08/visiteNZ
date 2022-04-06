@@ -5,12 +5,14 @@
 {% block body %}
 <div class="experiences">
     <h1>Experiences page</h1>
+    <a href="{{ path('app_experience_add')}}" class=" btn button">Add an experience</a>
     {% for experience in experiences %}
         <div class="card">
             <img src="{{ experience.imgUrl }}" alt="{{ experience.title }}">
-            <h3>{{ experience.title }}</h3>
+            <h3>{{ experience.title | upper }}</h3>
             <p>{{ experience.price }}€/day</p>
-            <a href="{{ path('app_experience_delete', {'id' : experience.id }) }}" class="button">Delete</a>
+            <a href="{{ path('app_experience_details', {'id' : experience.id }) }}" class=" btn button">See More</a>
+            <a href="{{ path('app_experience_edit', {'id' : experience.id }) }}" class=" btn button">Edit</a>
         </div>
     {% endfor %}
 </div>
