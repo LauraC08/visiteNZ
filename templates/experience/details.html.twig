@@ -8,7 +8,6 @@
                 <img src="{{ experience.imgUrl }}" alt="{{ experience.title }}">
                 <p>{{ experience.price }}€/day</p>
                 <p>{{ experience.description }}</p>
-                <a href="{{ path('app_experience_delete', {'id' : experience.id }) }}" class=" btn button">Delete</a>
                 <a href="{{ path('app_experience_edit', {'id' : experience.id }) }}" class=" btn button">Edit</a>
     </div>
 {% endblock %}

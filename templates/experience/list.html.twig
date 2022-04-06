@@ -5,7 +5,7 @@
 {% block body %}
 <div class="experiences">
     <h1>Experiences page</h1>
-    <a href="{{ path('app_experience_add')}}" class=" btn button">Add an experience</a>
+    <a href="{{ path('app_experience_new')}}" class=" btn button">Add</a>
     {% for experience in experiences %}
         <div class="card">
             <img src="{{ experience.imgUrl }}" alt="{{ experience.title }}">
