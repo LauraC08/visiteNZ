@@ -18,8 +18,8 @@ class ClientType extends AbstractType
             ->add('surname')
             ->add('email')
             ->add('phone')
-            ->add('preference')
-            ->add('experience', EntityType::class, ['class'=>Experience::class, 'choice_label'=>'title', 'label'=>'The Experience I want to book :'])
+            ->add('preference', null, ['label'=>'I prefer to be recontact by mail, I don’t like phone calls'])
+            ->add('experience', EntityType::class, ['class'=>Experience::class, 'choice_label'=>'title', 'label'=>'The Experience I want to book'])
         ;
     }
 

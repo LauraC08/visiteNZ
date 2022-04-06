@@ -7,13 +7,15 @@ $blue : #003C97;
 $green : #00700B;
 $merienda : 'Merienda', cursive;
 $roboto : 'Roboto Condensed', sans-serif;
-
 html{
     width: 100%;
 }
 body {
     background: $white;
     font-family: 'Roboto Condensed', sans-serif;
+    h2{
+        font-size: 4rem;
+    }
 }
 //HEADER//
 header{
@@ -66,3 +68,4 @@ footer{
 
 @import "./Home";
 @import "./Experiences";
+@import "./Contact";
