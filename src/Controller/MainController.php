@@ -49,7 +49,8 @@ class MainController extends AbstractController
     #[Route('/{_locale<%app.supported_locales%>}/admin/user', name: 'app_admin_user', methods: ['GET'])]
     public function showClients(UserRepository $userRepository): Response
     {
-        $clients = $userRepository->findBy(['roles'=>'["ROLE_USER"]']);
+        $role = "ROLE_USER";
+        $clients = $userRepository->findByRole($role);
         return $this->render('main/user.html.twig', compact('clients'));
     }
 }
