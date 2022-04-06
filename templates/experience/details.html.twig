@@ -8,6 +8,8 @@
                 <img src="{{ experience.imgUrl }}" alt="{{ experience.title }}">
                 <p>{{ experience.price }}€/day</p>
                 <p>{{ experience.description }}</p>
+        {% if(app.user) %}
                 <a href="{{ path('app_experience_edit', {'id' : experience.id }) }}" class=" btn button">Edit</a>
+        {% endif %}
     </div>
 {% endblock %}

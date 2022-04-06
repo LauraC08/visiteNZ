@@ -6,6 +6,10 @@
 
 {% block body %}
     <div class="contacts">
-        <h1>Contact page!</h1>
+        <h2>Contact page!</h2>
+        {{ form_start(viewForm) }}
+        {{ form_widget(viewForm) }}
+        <button class="btn button">Send</button>
+        {{ form_end(viewForm) }}
     </div>
 {% endblock %}
