@@ -7,11 +7,59 @@
     <body>
       <trans-unit id="0jg4sef" resname="Symfony is great">
         <source>Symfony is great</source>
-        <target>Symfony est super</target>
+        <target>__Symfony is great</target>
       </trans-unit>
-      <trans-unit id="NewZealand" resname="New Zealand">
+      <trans-unit id="KJjhbU5" resname="New Zealand">
         <source>New Zealand</source>
         <target>Nouvelle-Zélande</target>
+      </trans-unit>
+      <trans-unit id="f2EpRbV" resname="Where magic happens!">
+        <source>Where magic happens!</source>
+        <target>Où la magie s'invite</target>
+      </trans-unit>
+      <trans-unit id=".jr42ep" resname="Travel with us">
+        <source>Travel with us</source>
+        <target>Voyager avec nous</target>
+      </trans-unit>
+      <trans-unit id=".4xVX7l" resname="Why would you visit?">
+        <source>Why would you visit?</source>
+        <target>Pourquoi visiter?</target>
+      </trans-unit>
+      <trans-unit id="NuZcOfg" resname="HOME">
+        <source>HOME</source>
+        <target>ACCUEIL</target>
+      </trans-unit>
+      <trans-unit id="OGvBVKS" resname="OUR EXPERIENCES">
+        <source>OUR EXPERIENCES</source>
+        <target>NOS SEJOURS</target>
+      </trans-unit>
+      <trans-unit id="ksY2GkF" resname="CONTACTS">
+        <source>CONTACTS</source>
+        <target>CONTACT</target>
+      </trans-unit>
+      <trans-unit id="kG5co5k" resname="Sneek-Peek">
+        <source>Sneek-Peek</source>
+        <target>Aperçu</target>
+      </trans-unit>
+      <trans-unit id="pXsIpIC" resname="Previous">
+        <source>Previous</source>
+        <target>Précédent</target>
+      </trans-unit>
+      <trans-unit id="H.V6Kdf" resname="Next">
+        <source>Next</source>
+        <target>suivant</target>
+      </trans-unit>
+      <trans-unit id="9BVL9m2" resname="With two unique islands, 14 national parks, and dozens of diverse cities, there are plenty of New Zealand attractions and activities to choose from.&#10;            Explore golden coastlines fringed with native pōhutukawa trees, follow walking trails to waterfalls hidden in beech forests, or cycle through gently rolling vineyards.&#10;            If you're after New Zealand's famous adventure activities and extreme sports, you can choose from bungy jumping, jet boating, skydiving or zip-lining.&#10;            Or relax and take it easy at beautiful hot pools, cultural attractions and art galleries.">
+        <source>With two unique islands, 14 national parks, and dozens of diverse cities, there are plenty of New Zealand attractions and activities to choose from.
+            Explore golden coastlines fringed with native pōhutukawa trees, follow walking trails to waterfalls hidden in beech forests, or cycle through gently rolling vineyards.
+            If you're after New Zealand's famous adventure activities and extreme sports, you can choose from bungy jumping, jet boating, skydiving or zip-lining.
+            Or relax and take it easy at beautiful hot pools, cultural attractions and art galleries.</source>
+        <target>La Nouvelle-Zélande offre une myriade de choses à faire. Le plus difficile quand vous préparerez
+                vos vacances sera de choisir par quoi commencer !
+                De nombreux visiteurs souhaitent avant tout explorer le littoral et les paysages sublimes du pays. Si vous avez la trempe d'un aventurier, de nombreuses activités
+                palpitantes vous offriront de belles poussées d'adrénaline. Si vous souhaitez passer une journée détente, pourquoi ne pas vous intéresser aux bassins d'eau thermale,
+                aux vignobles ou aux attractions culturelles ?
+                Ce ne sont que des exemples parmi tant d'autres des choses à faire en Nouvelle-Zélande. Mieux vaut commencer dès maintenant à dresser votre liste.</target>
       </trans-unit>
     </body>
   </file>

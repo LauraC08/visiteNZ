@@ -22,14 +22,23 @@
     <header class="container-fluid p-2">
         <div class="site-id">
             <a href="{{ path('app_main') }}">
-                <img src="../assets/images/NZLogo.png" alt="Logo">
+                <img src="{{ asset('build/images/NZLogo.png') }}" alt="Logo">
             </a>
             <h1>Visit Nz</h1>
         </div>
         <nav>
-            <a href="{{ path('app_main') }}" class="nav-link">HOME</a>
-            <a href="{{ path('app_experience') }}" class="nav-link">OUR EXPERIENCES</a>
-            <a href="{{ path('app_contact') }}" class="nav-link">CONTACTS</a>
+            <a href="{{ path('app_main') }}" class="nav-link">{{ 'HOME' | trans }}</a>
+            <a href="{{ path('app_experience') }}" class="nav-link">{{ 'OUR EXPERIENCES' |trans }}</a>
+            <a href="{{ path('app_contact') }}" class="nav-link">{{ 'CONTACTS' | trans }}</a>
+            <a class="nav-link dropdown-toggle nav-item dropdown" href="#" id="dropdown-language" role="button"
+                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ app.request.locale|locale_name(app.request.locale)|u.title }}
+            </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-language">
+                    <li><a class="dropdown-item" href="{{ path('app_main', {_locale: 'en'}) }}">English</a></li>
+                    <li><a class="dropdown-item" href="{{ path('app_main', {_locale: 'fr'}) }}">French</a></li>
+                </ul>
+
         </nav>
     </header>
         {% block body %}{% endblock %}

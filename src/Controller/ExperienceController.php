@@ -8,7 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/experience')]
+#[Route('/{_locale<%app.supported_locales%>}/experience')]
 class ExperienceController extends AbstractController
 {
     #[Route('/', name: 'app_experience', methods: ['GET'])]
