@@ -1,0 +1,27 @@
+.experiences{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .card{
+    background: $black;
+    color: $white;
+    width: 50rem;
+    margin: 2rem;
+    img{
+      width: 100%;
+    }
+    .card-content {
+      h3{
+        font-size: 4rem;
+      }
+      p {
+        font-size: 2rem;
+        text-align: end;
+      }
+      span {
+        color: $green;
+      }
+    }
+  }
+}
