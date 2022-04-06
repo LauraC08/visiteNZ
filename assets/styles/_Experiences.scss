@@ -1,0 +1,38 @@
+.add{
+  background: $transparentblack;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.experiences{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .card{
+    background: $black;
+    color: $white;
+    width: 60rem;
+    margin: 2rem;
+    img{
+      width: 100%;
+    }
+    .card-content {
+      h3{
+        font-size: 4rem;
+      }
+      p {
+        font-size: 2.3rem;
+        text-align: end;
+      }
+      span {
+        font-size: 2rem;
+        color: $green;
+      }
+    }
+    .buttons{
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
