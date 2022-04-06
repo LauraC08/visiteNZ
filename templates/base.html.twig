@@ -25,6 +25,9 @@
                 <img src="{{ asset('build/images/NZLogo.png') }}" alt="Logo">
             </a>
             <h1>Visit Nz</h1>
+            {% if(app.user) %}
+                <p>\o/</p>
+            {% endif %}
         </div>
         <nav>
             <a href="{{ path('app_main') }}" class="nav-link">{{ 'HOME' | trans }}</a>
