@@ -61,6 +61,22 @@
                 aux vignobles ou aux attractions culturelles ?
                 Ce ne sont que des exemples parmi tant d'autres des choses à faire en Nouvelle-Zélande. Mieux vaut commencer dès maintenant à dresser votre liste.</target>
       </trans-unit>
+      <trans-unit id="beI5y3f" resname="Add Experience">
+        <source>Add Experience</source>
+        <target>Ajouter un séjour</target>
+      </trans-unit>
+      <trans-unit id="Xaj3_8K" resname="Back to list">
+        <source>Back to list</source>
+        <target>Retour à la liste</target>
+      </trans-unit>
+      <trans-unit id="fozSBW2" resname="Title">
+        <source>Title</source>
+        <target>Titre</target>
+      </trans-unit>
+      <trans-unit id="k8kchR5" resname="Price">
+        <source>Price</source>
+        <target>Prix</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
