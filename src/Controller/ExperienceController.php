@@ -3,8 +3,11 @@
 namespace App\Controller;
 
 use App\Entity\Experience;
+use App\Form\ExperienceType;
 use App\Repository\ExperienceRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -18,21 +21,43 @@ class ExperienceController extends AbstractController
         ['experiences'=>$exRep->findAll()]);
     }
 
-//    #[Route('/{id}', name: 'app_experience_show', methods: ['GET'])]
-//    public function show(Experience $experience): Response
-//    {
-//    }
+    #[Route('/{id}', name: 'app_experience_details', methods: ['GET'])]
+    public function details($id, ExperienceRepository $repo): Response
+    {
+        $experience=$repo->find($id);
+        if(!$experience){
+            throw $this->createNotFoundException();
+        }
+        return $this->render('experience/details.html.twig', ['experience'=>$experience]);
+    }
 
-//    #[Route('/add', name: 'app_experience_add')]
-//    public function add(Request $request, ExperienceRepository $exRep): Response
-//    {
-//        $experience= new Experience();
-//    }
+    #[Route('/add', name: 'app_experience_add')]
+    public function add(Request $request, ExperienceRepository $exRep, EntityManagerInterface $em): Response
+    {
+        $experience= new Experience();
+        $form= $this->createForm(ExperienceType::class, $experience);
+        $form->handleRequest($request);
+        if($form->isSubmitted( ) && $form->isValid()){
+            $em->persist($experience);
+            $em->flush();
+            $this->addFlash('success', 'The experience '. $experience->getTitle(). ' has benn added');
+            return $this->redirectToRoute('app_experience',[], Response::HTTP_SEE_OTHER);
+        }
+        $viewForm= $form->createView();
+        return $this->render('experience/add.html.twig', compact('viewForm'));
+    }
 
-//    #[Route('/{id}/edit', name: 'app_experience_edit', methods: ['GET', 'POST'])]
-//    public function edit(Request $request, Experience $experience, ExperienceRepository $exRep): Response
-//    {
-//    }
+    #[Route('/{id}/edit', name: 'app_experience_edit', methods: ['GET', 'POST'])]
+    public function edit(Request $request, Experience $experience, ExperienceRepository $exRep): Response
+    {
+        $form= $this->createForm(ExperienceType::class, $experience);
+        $form->handleRequest($request);
+        if($form->isSubmitted( ) && $form->isValid()){
+            $exRep->add($experience);
+            return $this->redirectToRoute('app_experience',[], Response::HTTP_SEE_OTHER);
+        }
+        return $this->renderForm('experience/edit.html.twig', compact('experience', 'form'));
+    }
 
 
     #[Route('/{id}', name: 'app_experience_delete', methods: ['POST'])]

@@ -18,12 +18,12 @@ class MainController extends AbstractController
     #[Route('/{_locale<%app.supported_locales%>}/', name: 'app_main')]
     public function index(TranslatorInterface $translator): Response
     {
-        $translated = $translator->trans('Symfony is great',
-    [],
-    'messages',
-    'fr_FR');
+//        $translated = $translator->trans('Symfony is great',
+//    [],
+//    'messages',
+//    'fr_FR');
         return $this->render('main/index.html.twig',
-        ['translated'=> $translated]);
+        );
     }
     #[Route('/{_locale<%app.supported_locales%>}/contact', name: 'app_contact')]
     public function contact(): Response
