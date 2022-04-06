@@ -46,7 +46,7 @@ class MainController extends AbstractController
         $viewForm=$form->createView();
         return $this->render('main/contact.html.twig', compact('viewForm'));
     }
-    #[Route('/{_locale<%app.supported_locales%>}/admin/user', name: 'app_experience', methods: ['GET'])]
+    #[Route('/{_locale<%app.supported_locales%>}/admin/user', name: 'app_admin_user', methods: ['GET'])]
     public function showClients(UserRepository $userRepository): Response
     {
         $clients = $userRepository->findBy(['roles'=>'["ROLE_USER"]']);
