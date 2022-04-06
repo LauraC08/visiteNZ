@@ -3,21 +3,25 @@
 {% block title %}{{ parent () }} | Our Experiences{% endblock %}
 
 {% block body %}
-<div class="experiences container">
     {% if(app.user) %}
-    <a href="{{ path('app_experience_new')}}" class=" btn button">Add</a>
+        <div class="add p-5">
+         <a href="{{ path('app_experience_new')}}" class=" btn button">Add an experience</a>
+        </div>
     {% endif %}
+<div class="experiences container mt-5 mb-5">
     {% for experience in experiences %}
-        <div class="card">
+        <div class="card pb-3">
             <img src="{{ experience.imgUrl }}" alt="{{ experience.title }}">
             <div class="card-content p-3">
             <h3>{{ experience.title | upper }}</h3>
             <p>{{ experience.price }}<span>€/day</span></p>
             </div>
+            <div class="buttons">
             <a href="{{ path('app_experience_details', {'id' : experience.id }) }}" class=" btn button">See More</a>
             {% if(app.user) %}
             <a href="{{ path('app_experience_edit', {'id' : experience.id }) }}" class=" btn button">Edit</a>
             {% endif %}
+            </div>
         </div>
     {% endfor %}
 </div>
