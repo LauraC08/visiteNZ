@@ -55,11 +55,11 @@
             If you're after New Zealand's famous adventure activities and extreme sports, you can choose from bungy jumping, jet boating, skydiving or zip-lining.
             Or relax and take it easy at beautiful hot pools, cultural attractions and art galleries.</source>
         <target>La Nouvelle-Zélande offre une myriade de choses à faire. Le plus difficile quand vous préparerez
-                vos vacances sera de choisir par quoi commencer !
-                De nombreux visiteurs souhaitent avant tout explorer le littoral et les paysages sublimes du pays. Si vous avez la trempe d'un aventurier, de nombreuses activités
-                palpitantes vous offriront de belles poussées d'adrénaline. Si vous souhaitez passer une journée détente, pourquoi ne pas vous intéresser aux bassins d'eau thermale,
-                aux vignobles ou aux attractions culturelles ?
-                Ce ne sont que des exemples parmi tant d'autres des choses à faire en Nouvelle-Zélande. Mieux vaut commencer dès maintenant à dresser votre liste.</target>
+          vos vacances sera de choisir par quoi commencer !
+          De nombreux visiteurs souhaitent avant tout explorer le littoral et les paysages sublimes du pays. Si vous avez la trempe d'un aventurier, de nombreuses activités
+          palpitantes vous offriront de belles poussées d'adrénaline. Si vous souhaitez passer une journée détente, pourquoi ne pas vous intéresser aux bassins d'eau thermale,
+          aux vignobles ou aux attractions culturelles ?
+          Ce ne sont que des exemples parmi tant d'autres des choses à faire en Nouvelle-Zélande. Mieux vaut commencer dès maintenant à dresser votre liste.</target>
       </trans-unit>
       <trans-unit id="beI5y3f" resname="Add Experience">
         <source>Add Experience</source>
@@ -94,8 +94,8 @@
         <target>Ajouter un séjour</target>
       </trans-unit>
       <trans-unit id="EXXePzZ" resname="€/day">
-        <source>/day</source>
-        <target>/jour</target>
+        <source>€/day</source>
+        <target>€/jour</target>
       </trans-unit>
       <trans-unit id="6V.qq6x" resname="See More">
         <source>See More</source>
@@ -145,10 +145,10 @@
         <source>Email</source>
         <target>Email</target>
       </trans-unit>
-<!--      <trans-unit id="oNwZG8H" resname="Preference">-->
-<!--        <source>Preference</source>-->
-<!--        <target>Préférence téléphonique</target>-->
-<!--      </trans-unit>-->
+      <trans-unit id="oNwZG8H" resname="Preference">
+        <source>Preference</source>
+        <target>Préférence</target>
+      </trans-unit>
       <trans-unit id="jqsPCd8" resname="Experience">
         <source>Experience</source>
         <target>Séjour</target>
@@ -173,9 +173,13 @@
         <source>/day</source>
         <target>/jour</target>
       </trans-unit>
+      <trans-unit id="qfJ_iAD" resname="Go back to the experiences">
+        <source>Go back to the experiences</source>
+        <target>Retour aux séjours</target>
+      </trans-unit>
       <trans-unit id="6Q3ypTV" resname="Users List">
         <source>Users List</source>
-        <target>Liste de Clients</target>
+        <target>Liste des clients</target>
       </trans-unit>
       <trans-unit id="1tV7MEs" resname="Phone preference">
         <source>Phone preference</source>
@@ -187,11 +191,11 @@
       </trans-unit>
       <trans-unit id="v7V3WUg" resname="Ok with phone">
         <source>Ok with phone</source>
-        <target>Ok pour téléphone</target>
+        <target>Téléphone accepté</target>
       </trans-unit>
       <trans-unit id="AByLqPv" resname="Experiences List">
         <source>Experiences List</source>
-        <target>Listes de séjours</target>
+        <target>Liste des séjours</target>
       </trans-unit>
     </body>
   </file>
