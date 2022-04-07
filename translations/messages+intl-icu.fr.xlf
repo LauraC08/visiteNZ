@@ -169,6 +169,14 @@
         <source>Back to Home</source>
         <target>Retour à l'accueil</target>
       </trans-unit>
+      <trans-unit id="6jDRxVS" resname="/day">
+        <source>/day</source>
+        <target>/jour</target>
+      </trans-unit>
+      <trans-unit id="qfJ_iAD" resname="Go back to the experiences">
+        <source>Go back to the experiences</source>
+        <target>Retour aux séjours</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

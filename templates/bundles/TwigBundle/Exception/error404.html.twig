@@ -3,18 +3,33 @@
 {% block title %}{{ parent () }} | Page not found{% endblock %}
 
 {% block body %}
+    {% if app.request.locale == 'fr' %}
     <div class="page-wrap d-flex flex-row align-items-center">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center">
-                    <span class="display-1 d-block">{{ 'Sorry' | trans}}!</span>
-                    <div class="mb-4 lead">{{ 'The page you are looking for was not found' | trans }}.</div>
-                    <a class="btn button" href="{{ path('app_main') }}"  class="btn btn-link">{{ 'Back to Home' | trans }}</a>
+                    <span class="display-1 d-block">Désolé!</span>
+                    <div class="mb-4 lead">La page que vous demandez n'a pas été trouvée.</div>
+                    <a class="btn button" href="{{ path('app_main') }}"  class="btn btn-link">Retour à l'accueil</a>
                     <img style="width: 10rem" src="{{ asset('build/images/Sad_Kiwi.gif') }}" alt="Logo">
                 </div>
             </div>
         </div>
     </div>
+    {% else %}
+        <div class="page-wrap d-flex flex-row align-items-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center">
+                        <span class="display-1 d-block">Sorry!</span>
+                        <div class="mb-4 lead">The page you are looking for was not found.</div>
+                        <a class="btn button" href="{{ path('app_main') }}"  class="btn btn-link">Back to Home</a>
+                        <img style="width: 10rem" src="{{ asset('build/images/Sad_Kiwi.gif') }}" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
 
 
 {% endblock %}
