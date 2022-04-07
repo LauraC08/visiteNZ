@@ -44,6 +44,8 @@ security:
          - { path: ^/fr/experience/edit, roles: ROLE_ADMIN }
          - { path: ^/en/experience/delete, roles: ROLE_ADMIN }
          - { path: ^/fr/experience/delete, roles: ROLE_ADMIN }
+         - { path: ^/en/register, roles: ROLE_ADMIN }
+         - { path: ^/fr/register, roles: ROLE_ADMIN }
 
     role_hierarchy:
         ROLE_ADMIN: ROLE_USER

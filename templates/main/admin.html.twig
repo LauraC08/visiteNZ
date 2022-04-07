@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ parent () }} | User List{% endblock %}
+{% block title %}{{ parent () }} | Admin{% endblock %}
 
 {% block body %}
     <div class="admin container mt-5 mb-5">
@@ -36,6 +36,9 @@
     {% endfor %}
             </tbody>
         </table>
+        <div class="add p-5">
+        <a href="{{ path('app_register') }}" class=" btn button">{{ 'Add an admin' | trans }}</a>
+        </div>
     </div>
     <div class="experience_display">
         <h2>{{ 'Experiences List' | trans }}</h2>

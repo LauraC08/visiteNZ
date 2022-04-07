@@ -197,6 +197,22 @@
         <source>Experiences List</source>
         <target>Liste des séjours</target>
       </trans-unit>
+      <trans-unit id="uinwZFI" resname="Add an admin">
+        <source>Add an admin</source>
+        <target>Ajouter un admin</target>
+      </trans-unit>
+      <trans-unit id="t9UAx_M" resname="Only administrator can log-in. Don't bother trying if your not one.">
+        <source>Only administrator can log-in. Don't bother trying if your not one.</source>
+        <target>Les administrateurs sont les seuls à pouvoir s'indentifier. Si vous n'en êtes pas un, cela ne marchera pas.</target>
+      </trans-unit>
+      <trans-unit id="588_9PF" resname="Password">
+        <source>Password</source>
+        <target>Mot de Passe</target>
+      </trans-unit>
+      <trans-unit id="nWMiwfT" resname="Login">
+        <source>Login</source>
+        <target>S'identifier</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

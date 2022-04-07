@@ -1,13 +1,26 @@
+.add{
+  background: #2C3034;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .experience_display{
-  .add{
-    background: #2C3034;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
   table{
   img{
     width: 10rem;
   }
+  }
+}
+
+.register{
+  min-height: 65vh;
+  form{
+    background: $black;
+    color:$white;
+    padding: 2rem;
+    .btn-ctr{
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 }

@@ -9,10 +9,11 @@
     {% endif %}
 
     <form action="{{ path('app_login') }}" method="post">
-        <label for="email" class="form-label">Email </label>
+        <p>{{ 'Only administrator can log-in. Don\'t bother trying if your not one.' | trans }}</p>
+        <label for="email" class="form-label">{{ 'Email' | trans }}  </label>
         <input type="text" class="form-control" id="email" name="_username"/>
 
-        <label for="password" class="form-label">Password : </label>
+        <label for="password" class="form-label">{{ 'Password' | trans }}</label>
         <input type="password" id="password" name="_password" class="form-control"/>
 
         {# CSRF protection #}
@@ -20,7 +21,7 @@
 
        <input type="hidden" name="_target_path" value="/en/admin"/>
         <div class="button-cont">
-            <button type="submit" class="button btn">Login</button>
+            <button type="submit" class="button btn">{{ 'Login' | trans }}</button>
         </div>
     </form>
     </div>
