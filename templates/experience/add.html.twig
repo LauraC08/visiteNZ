@@ -6,6 +6,6 @@
     <div class="add container mt-5 mb-5">
         <h2>{{ 'Add Experience' | trans }}</h2>
         {{ include('experience/_form.html.twig', {'button_label': 'Add' }) }}
-        <a href="{{ path('app_experience') }}" class="button btn">{{ 'Back to list'| trans }}</a>
+        <a href="{{ path('app_admin') }}" class="button btn">{{ 'Back to list'| trans }}</a>
     </div>
 {% endblock %}

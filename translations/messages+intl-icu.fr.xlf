@@ -94,8 +94,8 @@
         <target>Ajouter un séjour</target>
       </trans-unit>
       <trans-unit id="EXXePzZ" resname="€/day">
-        <source>€/day</source>
-        <target>€/jour</target>
+        <source>/day</source>
+        <target>/jour</target>
       </trans-unit>
       <trans-unit id="6V.qq6x" resname="See More">
         <source>See More</source>
@@ -145,10 +145,10 @@
         <source>Email</source>
         <target>Email</target>
       </trans-unit>
-      <trans-unit id="oNwZG8H" resname="Preference">
-        <source>Preference</source>
-        <target>Préférence</target>
-      </trans-unit>
+<!--      <trans-unit id="oNwZG8H" resname="Preference">-->
+<!--        <source>Preference</source>-->
+<!--        <target>Préférence téléphonique</target>-->
+<!--      </trans-unit>-->
       <trans-unit id="jqsPCd8" resname="Experience">
         <source>Experience</source>
         <target>Séjour</target>
@@ -168,6 +168,30 @@
       <trans-unit id="7seEJnd" resname="Back to Home">
         <source>Back to Home</source>
         <target>Retour à l'accueil</target>
+      </trans-unit>
+      <trans-unit id="6jDRxVS" resname="/day">
+        <source>/day</source>
+        <target>/jour</target>
+      </trans-unit>
+      <trans-unit id="6Q3ypTV" resname="Users List">
+        <source>Users List</source>
+        <target>Liste de Clients</target>
+      </trans-unit>
+      <trans-unit id="1tV7MEs" resname="Phone preference">
+        <source>Phone preference</source>
+        <target>Préférence téléphonique</target>
+      </trans-unit>
+      <trans-unit id="vdNNlKN" resname="No phone">
+        <source>No phone</source>
+        <target>Pas de téléphone</target>
+      </trans-unit>
+      <trans-unit id="v7V3WUg" resname="Ok with phone">
+        <source>Ok with phone</source>
+        <target>Ok pour téléphone</target>
+      </trans-unit>
+      <trans-unit id="AByLqPv" resname="Experiences List">
+        <source>Experiences List</source>
+        <target>Listes de séjours</target>
       </trans-unit>
     </body>
   </file>

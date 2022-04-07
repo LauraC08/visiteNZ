@@ -1,4 +1,11 @@
 {{ form_start(viewForm) }}
     {{ form_widget(viewForm) }}
-<button class="btn button">{{ button_label|default('Save') }}</button>
+<div class="btn-ctr">
+    {% if experience is defined %}
+    <form method="post" action="{{ path('app_experience_delete', {'id': experience.id}) }}" onsubmit="return confirm( 'Are you sure you want to delete this item?' );">
+        <button class="btn button">{{ 'Delete' | trans }}</button>
+    </form>
+    {% endif %}
+    <button class="btn button ms-3">{{ button_label|default('Save') }}</button>
+</div>
 {{ form_end(viewForm) }}

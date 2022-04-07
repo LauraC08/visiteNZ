@@ -54,12 +54,16 @@
 }
 
 //ADD//
-.add{
+.add, .edit{
   form{
     background: $black;
     color:$white;
     padding: 2rem;
     margin-bottom: 1rem;
+    .btn-ctr{
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 }
 
