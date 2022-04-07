@@ -1,0 +1,25 @@
+.login{
+  height: 75vh;
+  background: url("https://www.courrierinternational.com/sites/ci_master/files/styles/image_original_1280/public/assets/images/rtshv1g.jpg?itok=kmACOd5n")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  form{
+    background: $transparentblack;
+    color:$white;
+    width: 40rem;
+    padding: 2rem;
+    label{
+      margin-top: 0.5rem;
+    }
+    .button-cont{
+      margin-top:1rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

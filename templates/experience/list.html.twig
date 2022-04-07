@@ -9,7 +9,7 @@
             <img src="{{ experience.imgUrl }}" alt="{{ experience.title }}">
             <div class="card-content p-3">
             <h3>{{ experience.title | upper }}</h3>
-            <p>{{ experience.price }}<span>{{'€/day' | trans}}</span></p>
+            <p>{{ experience.price }}€<span>{{'/day' | trans}}</span></p>
             </div>
             <div class="buttons">
             <a href="{{ path('app_experience_details', {'id' : experience.id }) }}" class=" btn button">{{ 'See More' | trans}}</a>
