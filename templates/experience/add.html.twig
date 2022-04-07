@@ -3,7 +3,9 @@
 {% block title %}{{ parent () }} | {{ 'Add Experience' | trans }}{% endblock %}
 
 {% block body %}
-    <h2>{{ 'Add Experience' | trans }}</h2>
-    {{ include('experience/_form.html.twig', {'button_label': 'Add' }) }}
-    <a href="{{ path('app_experience') }}" class="button btn">{{ 'Back to list'| trans }}</a>
+    <div class="add container mt-5 mb-5">
+        <h2>{{ 'Add Experience' | trans }}</h2>
+        {{ include('experience/_form.html.twig', {'button_label': 'Add' }) }}
+        <a href="{{ path('app_experience') }}" class="button btn">{{ 'Back to list'| trans }}</a>
+    </div>
 {% endblock %}
