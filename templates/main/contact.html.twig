@@ -13,23 +13,26 @@
         {{ form_end(viewForm) }}
         <div>
             <h2>CONTACT INFO</h2>
-            <div class="c-infos">
-                <div class="info">
-                    <img src="{{ asset('build/images/HouseSimple.png') }}" alt="address">
-                    <div>
+            <div class="c-infos container">
+                    <div class="img-box">
+                        <img src="{{ asset('build/images/HouseSimple.png') }}" alt="address" >
+                    </div>
+                <div >
                         <p>VisitNz</p>
                         <p>33 rue des AllBlacks</p>
                         <p>44000 Nantes</p>
                     </div>
-                </div>
-                <div class="info">
-                    <img src="{{ asset('build/images/PhoneCall.png') }}" alt="Phone">
-                    <p>02.40.30.20.10</p>
-                </div>
-                <div class="info">
-                    <img src="{{ asset('build/images/EnvelopeOpen.png') }}" alt="Mail">
+
+                    <div class="img-box">
+                        <img src="{{ asset('build/images/PhoneCall.png') }}" alt="Phone">
+                    </div>
+                    <p >02.40.30.20.10</p>
+
+                    <div class="img-box">
+                        <img src="{{ asset('build/images/EnvelopeOpen.png') }}" alt="Mail">
+                    </div>
                     <p>contact@visitNz.com</p>
-                </div>
+
             </div>
         </div>
     </div>
