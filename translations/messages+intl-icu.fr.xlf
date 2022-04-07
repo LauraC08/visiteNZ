@@ -105,6 +105,38 @@
         <source>Edit</source>
         <target>Modifier</target>
       </trans-unit>
+      <trans-unit id="RW2j5UV" resname="CONTACT-US">
+        <source>CONTACT-US</source>
+        <target>Contactez-nous</target>
+      </trans-unit>
+      <trans-unit id="QyMrf5F" resname="CONTACT INFO">
+        <source>CONTACT INFO</source>
+        <target>INFO CONTACT</target>
+      </trans-unit>
+      <trans-unit id="3NHVIj9" resname="Name">
+        <source>Name</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="92LaBfT" resname="Surname">
+        <source>Surname</source>
+        <target>Prénom</target>
+      </trans-unit>
+      <trans-unit id="Y9zriAC" resname="Phone">
+        <source>Phone</source>
+        <target>Téléphone</target>
+      </trans-unit>
+      <trans-unit id="NPCs0QQ" resname="I prefer to be recontact by mail, I don’t like phone calls">
+        <source>I prefer to be recontact by mail, I don’t like phone calls</source>
+        <target>Je préfère être recontacté par email, je n'aime pas les appels téléphoniques</target>
+      </trans-unit>
+      <trans-unit id="sSaCBfL" resname="The Experience I want to book">
+        <source>The Experience I want to book</source>
+        <target>Le séjour que je veux réserver</target>
+      </trans-unit>
+      <trans-unit id="9vRoj.I" resname="Send">
+        <source>Send</source>
+        <target>Envoyer</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
