@@ -37,9 +37,14 @@ security:
     # Note: Only the *first* access control that matches will be used
     access_control:
          - { path: ^/en/experience/add, roles: ROLE_ADMIN }
-#         - { path: ^/{_locale<%app.supported_locales%>}/experience/delete, roles: ROLE_ADMIN }
-#         - { path: ^/{_locale<%app.supported_locales%>}/experience/edit, roles: ROLE_ADMIN }
-#         - { path: ^/profile, roles: ROLE_USER }
+         - { path: ^/fr/experience/add, roles: ROLE_ADMIN }
+         - { path: ^/en/admin, roles: ROLE_ADMIN }
+         - { path: ^/fr/admin, roles: ROLE_ADMIN }
+         - { path: ^/en/experience/edit, roles: ROLE_ADMIN }
+         - { path: ^/fr/experience/edit, roles: ROLE_ADMIN }
+         - { path: ^/en/experience/delete, roles: ROLE_ADMIN }
+         - { path: ^/fr/experience/delete, roles: ROLE_ADMIN }
+
     role_hierarchy:
         ROLE_ADMIN: ROLE_USER
 
