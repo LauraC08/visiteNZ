@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\ClientType;
+use App\Repository\ExperienceRepository;
 use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -46,11 +47,12 @@ class MainController extends AbstractController
         $viewForm=$form->createView();
         return $this->render('main/contact.html.twig', compact('viewForm'));
     }
-    #[Route('/{_locale<%app.supported_locales%>}/admin/user', name: 'app_admin_user', methods: ['GET'])]
-    public function showClients(UserRepository $userRepository): Response
+    #[Route('/{_locale<%app.supported_locales%>}/admin', name: 'app_admin', methods: ['GET'])]
+    public function showClients(UserRepository $userRepository, ExperienceRepository $expRep): Response
     {
         $role = "ROLE_USER";
         $clients = $userRepository->findByRole($role);
-        return $this->render('main/user.html.twig', compact('clients'));
+        $experiences = $expRep->findAll();
+        return $this->render('main/admin.html.twig', compact('clients', 'experiences'));
     }
 }

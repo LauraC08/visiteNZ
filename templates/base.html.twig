@@ -29,10 +29,11 @@
         <nav>
             <a href="{{ path('app_main') }}" class="nav-link">{{ 'HOME' | trans }}</a>
             <a href="{{ path('app_experience') }}" class="nav-link">{{ 'OUR EXPERIENCES' |trans }}</a>
-            <a href="{{ path('app_contact') }}" class="nav-link">{{ 'CONTACTS' | trans }}</a>
                 {% if(app.user) %}
+                <a href="{{ path('app_admin') }}" class="nav-link">ADMIN</a>
                 <a href="{{ path('app_logout') }}" class="nav-link"><img src="{{ asset('build/images/LockOpen.png') }}" alt="logout"></a>
                 {% else %}
+                    <a href="{{ path('app_contact') }}" class="nav-link">{{ 'CONTACTS' | trans }}</a>
                     <a href="{{ path('app_login') }}" class="nav-link"><img src="{{ asset('build/images/LockSimple.png') }}" alt="login"></a>
             {% endif %}
             <a class="nav-link dropdown-toggle nav-item dropdown" href="#" id="dropdown-language" role="button"
