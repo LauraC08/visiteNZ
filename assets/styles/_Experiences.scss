@@ -31,3 +31,25 @@
     }
   }
 }
+
+//DETAILS//
+
+.detail{
+  display: flex;
+  align-items: center;
+  background: $black;
+  color: $white;
+  img{
+    width: 40rem;
+  }
+  .detail-info{
+  h3{
+    font-size: 2rem;
+    text-align: end;
+    span{
+      color: $green;
+    }
+  }
+  }
+
+}

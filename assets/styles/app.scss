@@ -50,6 +50,17 @@ header{
             border-bottom: 0.2rem solid $green;
             transition: all 1s ease;
         }
+        .dropdown-menu{
+            background: $black;
+            color:$white;
+            a{
+                border-bottom: 0.2rem solid transparent;
+            }
+            a:hover, a:focus, a:active{
+                background: $black;
+                color:$white;
+            }
+        }
     }
 }
 .button{
