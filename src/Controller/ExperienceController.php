@@ -40,7 +40,7 @@ class ExperienceController extends AbstractController
         if($form->isSubmitted( ) && $form->isValid()){
             $em->persist($experience);
             $em->flush();
-            $this->addFlash('success', 'The experience '. $experience->getTitle(). ' has benn added');
+            $this->addFlash('success', 'The experience '. $experience->getTitle(). ' has been added');
             return $this->redirectToRoute('app_experience',[], Response::HTTP_SEE_OTHER);
         }
         $viewForm= $form->createView();
