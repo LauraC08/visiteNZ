@@ -137,6 +137,38 @@
         <source>Send</source>
         <target>Envoyer</target>
       </trans-unit>
+      <trans-unit id="sIwK89t" resname="User List">
+        <source>User List</source>
+        <target>Liste des utilisateurs</target>
+      </trans-unit>
+      <trans-unit id="lpzL089" resname="Email">
+        <source>Email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="oNwZG8H" resname="Preference">
+        <source>Preference</source>
+        <target>Préférence</target>
+      </trans-unit>
+      <trans-unit id="jqsPCd8" resname="Experience">
+        <source>Experience</source>
+        <target>Séjour</target>
+      </trans-unit>
+      <trans-unit id="nj32z5v" resname="Experience List">
+        <source>Experience List</source>
+        <target>Liste des séjours</target>
+      </trans-unit>
+      <trans-unit id="4AJf06h" resname="Sorry">
+        <source>Sorry</source>
+        <target>Désolé</target>
+      </trans-unit>
+      <trans-unit id="TyqHX64" resname="The page you are looking for was not found">
+        <source>The page you are looking for was not found</source>
+        <target>La page que vous cherchez n'a pas été trouvée</target>
+      </trans-unit>
+      <trans-unit id="7seEJnd" resname="Back to Home">
+        <source>Back to Home</source>
+        <target>Retour à l'accueil</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
