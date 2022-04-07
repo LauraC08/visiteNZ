@@ -48,7 +48,7 @@
     </header>
     {% for cat, messages in app.flashes %}
         {% for message in messages %}
-            <div>{{ cat }} : {{ message }}</div>
+            <div class="message d-flex flex-row align-items-center justify-content-center mt-5 mb-5">{{ message }}</div>
         {% endfor %}
     {% endfor %}
         {% block body %}{% endblock %}

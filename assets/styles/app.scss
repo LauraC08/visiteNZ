@@ -75,6 +75,11 @@ header{
 .p404{
     min-height: 65vh;
 }
+.message{
+    background: $green;
+    padding:2rem;
+    color:$white;
+}
 footer{
     background: $black;
     color: $white;
