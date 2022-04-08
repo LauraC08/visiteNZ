@@ -8,6 +8,7 @@
     <div class="contacts container mt-5 mb-5">
         {{ form_start(viewForm) }}
         <h2>{{ 'CONTACT-US' | trans }}</h2>
+        <p>{{ 'All fields are mandatory.' | trans }}</p>
         {{ form_widget(viewForm) }}
         <button class="btn button">{{ 'Send' | trans }}</button>
         {{ form_end(viewForm) }}

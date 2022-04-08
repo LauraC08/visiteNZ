@@ -9,6 +9,7 @@
             <h2>{{ experience.title | upper }}</h2>
             <h3>{{ experience.price }}€<span>{{'/day' | trans}}</span></h3>
             <p>{{ experience.description }}</p>
+            <a href="{{ path('app_contact')}}" class=" btn button">{{ 'I want to book this experience' | trans }} </a>
         </div>
     </div>
     <div class="container m-5">

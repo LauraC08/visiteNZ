@@ -89,7 +89,7 @@
         <source>Add an experience</source>
         <target>Ajouter un séjour</target>
       </trans-unit>
-      <trans-unit id="EXXePzZ" resname="/day">
+      <trans-unit id="6jDRxVS" resname="/day">
         <source>/day</source>
         <target>/jour</target>
       </trans-unit>
@@ -165,10 +165,6 @@
         <source>Back to Home</source>
         <target>Retour à l'accueil</target>
       </trans-unit>
-      <trans-unit id="6jDRxVS" resname="/day">
-        <source>/day</source>
-        <target>/jour</target>
-      </trans-unit>
       <trans-unit id="qfJ_iAD" resname="Go back to the experiences">
         <source>Go back to the experiences</source>
         <target>Retour aux séjours</target>
@@ -208,6 +204,14 @@
       <trans-unit id="nWMiwfT" resname="Login">
         <source>Login</source>
         <target>S'identifier</target>
+      </trans-unit>
+      <trans-unit id="l9MdURi" resname="I want to book this experience">
+        <source>I want to book this experience</source>
+        <target>Je veux réserver ce séjour</target>
+      </trans-unit>
+      <trans-unit id="TbTSV.D" resname="All fields are mandatory.">
+        <source>All fields are mandatory.</source>
+        <target>Tous les champs sont obligatoires.</target>
       </trans-unit>
     </body>
   </file>

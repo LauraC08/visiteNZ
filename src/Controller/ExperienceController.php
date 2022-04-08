@@ -54,6 +54,7 @@ class ExperienceController extends AbstractController
         $viewForm->handleRequest($request);
         if($viewForm->isSubmitted( ) && $viewForm->isValid()){
             $exRep->add($experience);
+            $this->addFlash('success', 'The experience '. $experience->getTitle(). ' has been modified');
             return $this->redirectToRoute('app_experience',[], Response::HTTP_SEE_OTHER);
         }
         return $this->renderForm('experience/edit.html.twig', compact('experience', 'viewForm'));
@@ -65,7 +66,7 @@ class ExperienceController extends AbstractController
     {
         //PENSER à RAJOUTER SEASURF
             $exRep->remove($experience);
-
-        return $this->redirectToRoute('app_experience', [], Response::HTTP_SEE_OTHER);
+        $this->addFlash('success', 'The experience '. $experience->getTitle(). ' has been deleted');
+        return $this->redirectToRoute('app_admin', [], Response::HTTP_SEE_OTHER);
     }
 }
