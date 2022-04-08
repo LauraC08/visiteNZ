@@ -57,6 +57,7 @@ header{
                 border-bottom: 0.2rem solid transparent;
             }
             a:hover, a:focus, a:active{
+                border-bottom: 0.2rem solid $green;
                 background: $black;
                 color:$white;
             }

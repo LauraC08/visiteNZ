@@ -31,10 +31,10 @@
             <a href="{{ path('app_experience') }}" class="nav-link">{{ 'OUR EXPERIENCES' |trans }}</a>
                 {% if(app.user) %}
                 <a href="{{ path('app_admin') }}" class="nav-link">ADMIN</a>
-                <a href="{{ path('app_logout') }}" class="nav-link"><img src="{{ asset('build/images/LockOpen.png') }}" alt="logout"></a>
+                <a href="{{ path('app_logout') }}" class="nav-link"><img src="{{ asset('build/images/LockOpen.png') }}" title="logout" alt="logout"></a>
                 {% else %}
                     <a href="{{ path('app_contact') }}" class="nav-link">{{ 'CONTACTS' | trans }}</a>
-                    <a href="{{ path('app_login') }}" class="nav-link"><img src="{{ asset('build/images/LockSimple.png') }}" alt="login"></a>
+                    <a href="{{ path('app_login') }}" class="nav-link"><img src="{{ asset('build/images/LockSimple.png') }}" title="login" alt="login"></a>
             {% endif %}
             <a class="nav-link dropdown-toggle nav-item dropdown" href="#" id="dropdown-language" role="button"
                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

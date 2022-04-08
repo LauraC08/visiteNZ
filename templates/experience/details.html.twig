@@ -7,7 +7,7 @@
         <img src="{{ experience.imgUrl }}" alt="{{ experience.title }}">
         <div class="detail-info p-5">
             <h2>{{ experience.title | upper }}</h2>
-            <h3>{{ experience.price }}€<span>/day</span></h3>
+            <h3>{{ experience.price }}€<span>{{'/day' | trans}}</span></h3>
             <p>{{ experience.description }}</p>
         </div>
     </div>

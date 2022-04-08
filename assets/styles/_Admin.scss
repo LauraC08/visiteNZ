@@ -1,23 +1,26 @@
-.add{
-  background: #2C3034;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.experience_display{
-  table{
-  img{
-    width: 10rem;
+.admin {
+  .add {
+    background: #2C3034;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
-  }
-}
 
+  .experience_display{
+    table{
+      img{
+        width: 10rem;
+      }
+    }
+  }
+}
 .register{
   min-height: 65vh;
   form{
     background: $black;
     color:$white;
     padding: 2rem;
+    margin-bottom: 1rem;
     .btn-ctr{
       display: flex;
       justify-content: flex-end;

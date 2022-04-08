@@ -5,10 +5,6 @@
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
-      <trans-unit id="0jg4sef" resname="Symfony is great">
-        <source>Symfony is great</source>
-        <target>__Symfony is great</target>
-      </trans-unit>
       <trans-unit id="KJjhbU5" resname="New Zealand">
         <source>New Zealand</source>
         <target>Nouvelle-Zélande</target>
@@ -93,9 +89,9 @@
         <source>Add an experience</source>
         <target>Ajouter un séjour</target>
       </trans-unit>
-      <trans-unit id="EXXePzZ" resname="€/day">
-        <source>€/day</source>
-        <target>€/jour</target>
+      <trans-unit id="EXXePzZ" resname="/day">
+        <source>/day</source>
+        <target>/jour</target>
       </trans-unit>
       <trans-unit id="6V.qq6x" resname="See More">
         <source>See More</source>
@@ -115,11 +111,11 @@
       </trans-unit>
       <trans-unit id="3NHVIj9" resname="Name">
         <source>Name</source>
-        <target>Nom</target>
+        <target>Prénom</target>
       </trans-unit>
       <trans-unit id="92LaBfT" resname="Surname">
         <source>Surname</source>
-        <target>Prénom</target>
+        <target>Nom</target>
       </trans-unit>
       <trans-unit id="Y9zriAC" resname="Phone">
         <source>Phone</source>

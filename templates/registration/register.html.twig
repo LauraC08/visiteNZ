@@ -11,5 +11,6 @@
             <button class="btn button">{{ button_label|default('Register') }}</button>
         </div>
     {{ form_end(registrationForm) }}
+        <a href="{{ path('app_admin') }}" class="button btn">{{ 'Back to list'| trans }}</a>
     </div>
 {% endblock %}
